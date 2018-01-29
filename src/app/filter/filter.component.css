@@ -1,0 +1,25 @@
+article{
+    padding: 50px 20px;
+}
+article h6{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+article span{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+article span label{
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html,body{
+    margin:0;
+    padding: 0;
+    background: #EDF4FA;
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,p,ul,li{
+    margin: 0;
+    padding: 0;
+}
+.btn{
+    border: 0;
+    background: #ccc;
+    color: #fff;
+    padding: 8px 25px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 15px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.btnSuccess{
+    background: #00B45D;
+}
+.btnPrimary{
+    background: #795548;
+}
+.mt30{
+    margin-top: 30px;
+}
+.block{
+    display: block;
+}

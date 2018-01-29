@@ -1,0 +1,18 @@
+<header>
+  <button routerLink="/Home" class="btn btnPrimary">Browse</button>
+</header>
+<section>
+  <main>
+    <ul>
+      <li *ngFor="let product of products; let i = index;" (click)="gotoDetail(i)">
+        <div class="productWidget">
+          <figure>
+            <img src="../../assets/images/{{product.image}}" />
+          </figure>
+          <figcaption>{{product.name}} {{product.measurement}}</figcaption>
+          <strong>${{product.price}}</strong>
+        </div>
+      </li>
+    </ul>
+  </main>
+</section>

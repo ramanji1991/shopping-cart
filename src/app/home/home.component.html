@@ -1,0 +1,31 @@
+<header>
+  <button routerLink="/Cart" class="btn btnSuccess">Cart</button>
+  </header>
+<section>
+  <aside>
+    <article>
+        <div *ngFor="let filter of filters; let i = index;">
+          <h6>{{filter.name}}</h6>
+          <span *ngFor="let val of filter.values; let j = index;">
+            <input type="checkbox" id="checkBox-{{j}}" [(checklist)]="brands" checklistValue="{{val}}"> 
+            <label for="checkBox-{{j}}">{{val}}</label>
+          </span>
+        </div>
+      </article>
+  </aside>
+  <main>
+    <ul>
+      <li *ngFor="let product of products | brandFilter: 'brand' : brands; let i = index;" (click)="gotoDetail(i)">
+        <div class="productWidget">
+          <figure>
+            <img src="../../assets/images/{{product.image}}" />
+          </figure>
+          <figcaption>{{product.name}} {{product.measurement}}</figcaption>
+          <strong>${{product.price}}</strong>
+          <button class="btn btnSuccess block">Add To Cart </button>
+        </div>
+      </li>
+    </ul>
+  </main>
+</section>
+

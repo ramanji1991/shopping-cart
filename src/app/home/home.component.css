@@ -1,0 +1,73 @@
+
+section{
+    width: 100%;
+    float: left;
+}
+aside{
+    width: 15%;
+    background: #333;
+    height: 100vh;
+    float: left;
+}
+main{
+    width: 75%;
+    float: left;
+    margin: 30px 70px;
+    /* text-align: center; */
+    display: block;
+}
+.productWidget{
+    text-align: center;
+    background: #fff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3); 
+    padding: 0px 10px 10px 10px;
+}
+.productWidget figure{
+    margin: 0;
+}
+.productWidget button{
+    text-align: center;
+    margin: 5px auto;
+}
+main ul{
+    width:100%;
+}
+main ul li{
+    display: inline-block;
+    list-style: none;
+    width: 30%;
+    margin: 0 15px 20px 15px;
+    cursor: pointer;
+}
+header{
+    /* background: #00233c; */
+    padding: 10px;
+    text-align: right;
+    background: #fff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+}
+article{
+    padding: 50px 20px;
+}
+article h6{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+article span{
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+article span label{
+    cursor: pointer;
+}
+input[type="checkbox"] {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}

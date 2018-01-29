@@ -1,0 +1,20 @@
+<header>
+  <button routerLink="/Cart" class="btn btnSuccess">Cart</button>
+  <button routerLink="/Home" class="btn btnPrimary">Browse</button>
+</header>
+<main>
+  <h2>{{product.name}}</h2>
+  <ul>
+    <li>
+      <figure>
+        <img src="../../assets/images/{{product.image}}" />
+      </figure>
+    </li>
+    <li>
+      <h3>{{product.measurement}}</h3>
+      <strong>${{product.price}}</strong>
+      <p>{{product.desc}}</p>
+          <button class="btn btnSuccess">Add to Cart</button>
+    </li>
+  </ul>
+</main>
